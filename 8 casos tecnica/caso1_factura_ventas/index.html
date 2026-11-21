@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caso 1 - Factura de ventas</title>
+  <style>
+    body{font-family:Arial,sans-serif;background:#f2f4f8;margin:0;padding:25px;color:#222}
+    main{max-width:850px;margin:auto;background:white;padding:25px;border-radius:12px;box-shadow:0 3px 12px #0001}
+    h1{color:#17324d} .fila{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0}
+    select,input,button{padding:11px;border:1px solid #bbb;border-radius:6px;font-size:15px}
+    input,select{flex:1;min-width:150px} button{background:#17324d;color:white;border:0;cursor:pointer}
+    button:hover{background:#245477} li{margin:8px 0} .resultado{background:#eef4f8;padding:15px;border-radius:8px;margin-top:15px}
+  </style>
+</head>
+<body>
+<main>
+  <h1>Simulador de factura de ventas</h1>
+  <p>Seleccione un producto, indique la cantidad y agréguelo a la factura.</p>
+  <div class="fila">
+    <select id="producto">
+      <option value="Leche|1.00">Leche - $1.00</option>
+      <option value="Arroz|1.80">Arroz - $1.80</option>
+      <option value="Aceite|3.50">Aceite - $3.50</option>
+      <option value="Azúcar|1.25">Azúcar - $1.25</option>
+      <option value="Café|4.00">Café - $4.00</option>
+    </select>
+    <input type="number" id="cantidad" min="1" step="1" placeholder="Cantidad">
+    <button id="btnAgregar">Agregar producto</button>
+  </div>
+  <h2>Productos comprados</h2>
+  <ul id="lista"></ul>
+  <button id="btnCalcular">Calcular factura</button>
+  <div class="resultado" id="resultado">Aquí aparecerá el resumen de la factura.</div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caso 8 - Turnos bancarios</title>
+  <style>
+    body{font-family:Arial;background:#f2f4f8;padding:25px;color:#222}main{max-width:750px;margin:auto;background:white;padding:25px;border-radius:12px}
+    h1{color:#17324d}input,button{padding:11px;border:1px solid #bbb;border-radius:6px;font-size:15px;margin:5px}
+    button{background:#17324d;color:white;border:0;cursor:pointer}.caja{background:#eef4f8;padding:15px;margin-top:15px;border-radius:8px}
+  </style>
+</head>
+<body>
+<main>
+  <h1>Sistema de turnos bancarios</h1>
+  <input type="text" id="nombre" placeholder="Nombre del cliente">
+  <button id="btnAsignar">Asignar turno</button>
+  <button id="btnAtender">Atender siguiente</button>
+  <button id="btnEstadisticas">Ver estadisticas del dia</button>
+  <h2>Turnos pendientes</h2>
+  <ul id="lista"></ul>
+  <div class="caja" id="atencion">No hay clientes atendidos todavia.</div>
+  <div class="caja" id="estadisticas">Las estadisticas apareceran aqui.</div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caso 4 - Pedidos e inventario</title>
+  <style>
+    body{font-family:Arial;background:#f2f4f8;padding:25px;color:#222}main{max-width:750px;margin:auto;background:white;padding:25px;border-radius:12px}
+    h1{color:#17324d}select,button{padding:11px;border:1px solid #bbb;border-radius:6px;font-size:15px;margin:5px}
+    button{background:#17324d;color:white;border:0;cursor:pointer}.caja{background:#eef4f8;padding:15px;margin-top:15px;border-radius:8px}
+  </style>
+</head>
+<body>
+<main>
+  <h1>Control de pedidos e inventario</h1>
+  <p>Seleccione el plato que desea pedir. Cada pedido descuenta una unidad.</p>
+  <select id="plato">
+    <option value="Arroz con pollo">Arroz con pollo</option>
+    <option value="Ensalada">Ensalada</option>
+    <option value="Hamburguesa">Hamburguesa</option>
+    <option value="Sopa">Sopa</option>
+  </select>
+  <button id="btnPedido">Registrar pedido</button>
+  <h2>Inventario disponible</h2>
+  <ul id="inventario"></ul>
+  <h2>Pedidos realizados</h2>
+  <ul id="pedidos"></ul>
+  <div class="caja" id="agotados"></div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

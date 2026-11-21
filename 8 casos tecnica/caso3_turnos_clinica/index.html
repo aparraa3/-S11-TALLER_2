@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caso 3 - Turnos clinica</title>
+  <style>
+    body{font-family:Arial;background:#f2f4f8;padding:25px;color:#222}main{max-width:750px;margin:auto;background:white;padding:25px;border-radius:12px}
+    h1{color:#17324d}.fila{display:flex;gap:8px;flex-wrap:wrap}input,select,button{padding:11px;border:1px solid #bbb;border-radius:6px;font-size:15px}
+    input,select{flex:1}button{background:#17324d;color:white;border:0;cursor:pointer;margin-top:8px}
+    .caja{background:#eef4f8;padding:15px;margin-top:15px;border-radius:8px}
+  </style>
+</head>
+<body>
+<main>
+  <h1>Sistema de turnos de una clínica</h1>
+  <div class="fila">
+    <input type="text" id="nombre" placeholder="Nombre del paciente">
+    <select id="prioridad">
+      <option value="Alta">Alta</option>
+      <option value="Media">Media</option>
+      <option value="Baja">Baja</option>
+    </select>
+  </div>
+  <button id="btnRegistrar">Registrar paciente</button>
+  <button id="btnAtender">Atender siguiente paciente</button>
+  <h2>Turnos pendientes</h2>
+  <ul id="lista"></ul>
+  <div class="caja" id="atencion">Todavía no se ha atendido a ningún paciente.</div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
